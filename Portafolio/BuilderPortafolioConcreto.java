@@ -6,17 +6,15 @@ import java.util.ArrayList;
 
 import productos.producto.Producto;
 
-public class BuilderPortafolioConcreto extends BuilderPortafolio{
+public class BuilderPortafolioConcreto implements BuilderPortafolio{
     
     PortafolioClase portafolio = new PortafolioClase();
-    
-    public BuilderPortafolioConcreto setProducto(Producto producto){
+
+    @Override
+    public BuilderPortafolio setProducto(Producto producto) {
         portafolio.agregarProducto(producto);
         return this;
     }
-    
-    
-
 }
 
 

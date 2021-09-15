@@ -7,7 +7,7 @@ import productos.producto.Producto;
  * @author juana
  */
 public interface BuilderPortafolio {
-    public void setProducto(Producto producto);
+    public BuilderPortafolio setProducto(Producto producto);
 }
 
 
