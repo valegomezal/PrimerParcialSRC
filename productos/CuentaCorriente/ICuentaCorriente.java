@@ -5,11 +5,11 @@ import productos.Tarjeta.Tarjeta;
 
 public interface ICuentaCorriente {
 	
-	public Cliente propietario();
-	public Tarjeta tarjeta();
-	public  String cuenta();
-	public int Saldo();
-	public int numeroCuenta();
-	public int CuotaManejo();
+	public Cliente propietario(Cliente pro);
+	public Tarjeta tarjeta(Tarjeta tar);
+	public  String cuenta(String cuenta);
+	public int Saldo(int Saldo);
+	public int numeroCuenta(int numeroCuenta);
+	public int CuotaManejo(int Cuota);
 	
 }

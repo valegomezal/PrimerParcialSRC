@@ -5,7 +5,7 @@ import java.util.Date;
 import Launcher.Cliente;
 import Launcher.Director;
 
-public class MenorEdadCredito extends CreditoPadre
+public class MenorEdadCredito extends CreditoPadre{
 
 
 }

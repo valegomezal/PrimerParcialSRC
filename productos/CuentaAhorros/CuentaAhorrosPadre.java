@@ -64,42 +64,47 @@ public class CuentaAhorrosPadre implements ICuentaAhorros{
 
 	
 	
-	
-	
+
 	@Override
-	public Cliente propietario() {
+	public Cliente propietario(Cliente pro) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Tarjeta tarjeta() {
+	public Tarjeta tarjeta(Tarjeta Boo) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String cuenta() {
+	public String cuenta(String Cuenta) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int Saldo() {
+	public int Saldo(int Saldo) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int numeroCuenta() {
+	public int numeroCuenta(int numC) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int CuotaManejo() {
+	public int CuotaManejo(int CuotaM) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public productos.CuentaAhorros.ICuentaAhorros ICuentaAhorros() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
