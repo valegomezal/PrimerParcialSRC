@@ -12,4 +12,5 @@ public interface ICuentaCorriente {
 	public int numeroCuenta(int numeroCuenta);
 	public int CuotaManejo(int Cuota);
 	
+	
 }

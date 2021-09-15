@@ -1,20 +1,26 @@
-package productos.CuentaAhorros;
+package productos.CuentaCredito;
+
+import java.util.Date;
 
 import Launcher.Cliente;
 import productos.Tarjeta.Tarjeta;
 
-public class CuentaAhorrosPadre implements ICuentaAhorros{
+public class CuentaCreditoPadre implements ICuentaCredito{
 	
-	
-	private Tarjeta tarjeta;
-	private String cuenta;
-	private int Saldo;
-	private int numeroCuenta;
-	private int CuotaManejo;
 	private Cliente propietario;
-	
-	
-	public Cliente getPropietario() {
+	   private Tarjeta tarjeta;
+	   private String cuenta;
+	   private int Saldo;
+	   private int numeroCuenta;
+	   private int CuotaManejo;
+	   private int interes;
+	   private Date fechaCorte;
+	   
+	   
+	 public CuentaCreditoPadre() {
+		 
+	 }
+	   public Cliente getPropietario() {
 		return propietario;
 	}
 
@@ -62,49 +68,68 @@ public class CuentaAhorrosPadre implements ICuentaAhorros{
 		CuotaManejo = cuotaManejo;
 	}
 
-	
-	
+	public int getInteres() {
+		return interes;
+	}
+
+	public void setInteres(int interes) {
+		this.interes = interes;
+	}
+
+	public Date getFechaCorte() {
+		return fechaCorte;
+	}
+
+	public void setFechaCorte(Date fechaCorte) {
+		this.fechaCorte = fechaCorte;
+	}
+
+
 
 	@Override
-	public Cliente propietario(Cliente pro) {
+	public Cliente propietario() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Tarjeta tarjeta(Tarjeta Boo) {
+	public Tarjeta tarjeta() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String cuenta(String Cuenta) {
+	public String cuenta() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int Saldo(int Saldo) {
+	public int Saldo() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int numeroCuenta(int numC) {
+	public int numeroCuenta() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int CuotaManejo(int CuotaM) {
+	public int CuotaManejo() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-
+	@Override
+	public int interes() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
 	@Override
-	public productos.CuentaAhorros.ICuentaAhorros IClonarAhorros() {
+	public Date fechaCorte() {
 		// TODO Auto-generated method stub
 		return null;
 	}
