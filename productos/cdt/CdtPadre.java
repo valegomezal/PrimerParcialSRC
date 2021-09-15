@@ -2,11 +2,12 @@ package productos.cdt;
 
 import java.util.Date;
 
+
 import Launcher.Cliente;
+
 
 public class CdtPadre implements ICdt {
 	
-
 	private Cliente propietario;
 	private Date fechaApertura;
 	private Date fechaCierre;
@@ -16,8 +17,8 @@ public class CdtPadre implements ICdt {
 	private long MinimoApertura;
 	
 	public CdtPadre() {}
-	private CdtPadre(CdtPadre c) {
-		super();
+	public CdtPadre(CdtPadre c) {
+		
 		this.propietario=c.propietario;
 		this.fechaApertura=c.fechaApertura;
 		this.fechaCierre=c.fechaCierre;
@@ -82,59 +83,47 @@ public class CdtPadre implements ICdt {
 	public void setNumeroCuenta(long numeroCuenta) {
 		NumeroCuenta = numeroCuenta;
 	}
-
+	
+	@Override
+	public ICdt clonarICdt() {
+		// TODO Auto-generated method stub
+		return new  CdtPadre(this);
+	}
 	@Override
 	public Cliente propietario(Cliente pro) {
 		// TODO Auto-generated method stub
-		return pro;
+		return null;
 	}
-
 	@Override
 	public Date FechaApertura(Date FechA) {
 		// TODO Auto-generated method stub
-		return FechA;
+		return null;
 	}
-
 	@Override
 	public Date FechaCierre(Date FechC) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
 	public long NumeroCuenta(long NumC) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
 	public long saldo(long saldo) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public int interes(int inte) {
+	public double interes() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public long MinimoApertura(long Apert) {
+	public long MinimoApertura() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
-	@Override
-	public ICdt clonarICdt() {
-		// TODO Auto-generated method stub
-		
-		return new CdtPadre(this);
-		
-	}
-	public String propietario(String pro) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 	
 }

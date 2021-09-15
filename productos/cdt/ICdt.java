@@ -13,11 +13,8 @@ public interface ICdt   {
 	public Date FechaCierre(Date FechC);
 	public long NumeroCuenta(long NumC);
 	public long saldo(long saldo);
-	public int interes(int inte);
-	public long MinimoApertura(long Apert);
-
-
-
+	public double interes();
+	public long MinimoApertura();
 	public ICdt clonarICdt();
 	
 

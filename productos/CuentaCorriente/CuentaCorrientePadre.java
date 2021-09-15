@@ -1,6 +1,7 @@
 package productos.CuentaCorriente;
 
 import Launcher.Cliente;
+import productos.CuentaAhorros.CuentaAhorrosPadre;
 import productos.Tarjeta.Tarjeta;
 
 public class CuentaCorrientePadre implements ICuentaCorriente{
@@ -117,7 +118,7 @@ public class CuentaCorrientePadre implements ICuentaCorriente{
 	@Override
 	public ICuentaCorriente IClonarCorriente() {
 		// TODO Auto-generated method stub
-		return null;
+		return new  CuentaCorrientePadre(this);
 	}
 
 }

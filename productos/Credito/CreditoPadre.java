@@ -3,6 +3,7 @@ package productos.Credito;
 import java.util.Date;
 
 import Launcher.Cliente;
+import productos.cdt.CdtPadre;
 import productos.cdt.ICdt;
 
 public class CreditoPadre implements ICredito {
@@ -94,6 +95,7 @@ public class CreditoPadre implements ICredito {
 	@Override
 	public ICredito clonarICredito() {
 		// TODO Auto-generated method stub
-		return null;
+		return new  CreditoPadre(this);
 	}
+	
 }

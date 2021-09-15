@@ -3,6 +3,7 @@ package productos.CuentaCredito;
 import java.util.Date;
 
 import Launcher.Cliente;
+import productos.Credito.CreditoPadre;
 import productos.Tarjeta.Tarjeta;
 
 public class CuentaCreditoPadre implements ICuentaCredito{
@@ -140,7 +141,7 @@ public class CuentaCreditoPadre implements ICuentaCredito{
 	@Override
 	public ICuentaCredito IClonarCredito() {
 		// TODO Auto-generated method stub
-		return null;
+		return new  CuentaCreditoPadre(this);
 	}
 
 }

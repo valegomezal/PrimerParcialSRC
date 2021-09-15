@@ -10,6 +10,5 @@ public interface ICredito {
 	public long ValorCredito(long ValorCredito);
 	public int cuotas(int cuotas);
 	public Date FechasPago(Date FechasPago);
-	
 	public ICredito clonarICredito();
 }

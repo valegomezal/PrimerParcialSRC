@@ -8,16 +8,16 @@ public class Tarjeta {
 	private int NumeroMes;
 	private int AnoVencimiento;
 	private int Cvv;
-	//Cuenta TipodeCuenta=new Cuenta();
+	//Cuenta TipodeCuenta;
 	
 	
 	
-	public Tarjeta(Cliente propietario,String number,int NumeroMes,int AnoVencimiento,int Cvv) {
+	private Tarjeta(Tarjeta ta) {
 		
-		this.number=number;
-		this.NumeroMes=NumeroMes;
-		this.AnoVencimiento=AnoVencimiento;
-		this.Cvv=Cvv;
+		this.number=ta.number;
+		this.NumeroMes=ta.NumeroMes;
+		this.AnoVencimiento=ta.AnoVencimiento;
+		this.Cvv=ta.Cvv;
 	
 	}
 	

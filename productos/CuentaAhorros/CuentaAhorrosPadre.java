@@ -1,6 +1,7 @@
 package productos.CuentaAhorros;
 
 import Launcher.Cliente;
+import productos.Credito.CreditoPadre;
 import productos.Tarjeta.Tarjeta;
 
 public class CuentaAhorrosPadre implements ICuentaAhorros{
@@ -106,13 +107,15 @@ public class CuentaAhorrosPadre implements ICuentaAhorros{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
-
-
 	@Override
-	public productos.CuentaAhorros.ICuentaAhorros IClonarAhorros() {
+	public ICuentaAhorros IClonarAhorros() {
 		// TODO Auto-generated method stub
-		return null;
+		 return new  CuentaAhorrosPadre(this);
 	}
+
+
+
+
+
 
 }
