@@ -15,6 +15,16 @@ public class CuentaCorrientePadre implements ICuentaCorriente{
 	
 	public CuentaCorrientePadre() {}
 	
+	private CuentaCorrientePadre(CuentaCorrientePadre cp) {
+		
+		this.tarjeta=cp.tarjeta;
+		this.cuenta=cp.cuenta;
+		this.Saldo=cp.Saldo;
+		this.numeroCuenta=cp.numeroCuenta;
+		this.CuotaManejo=cp.CuotaManejo;
+		this.propietario=cp.propietario;
+		
+	}
 	
 	public Cliente getPropietario() {
 		return propietario;
@@ -101,6 +111,13 @@ public class CuentaCorrientePadre implements ICuentaCorriente{
 	public int CuotaManejo(int Cuota) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+
+	@Override
+	public ICuentaCorriente IClonarCorriente() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

@@ -17,7 +17,20 @@ public class CuentaCreditoPadre implements ICuentaCredito{
 	   private Date fechaCorte;
 	   
 	   
-	 public CuentaCreditoPadre() {
+	 public CuentaCreditoPadre() {}
+	 
+	 private CuentaCreditoPadre(CuentaCreditoPadre cc) {
+		 
+		 this.propietario=cc.propietario;
+		 this.tarjeta=cc.tarjeta;
+		 this.cuenta=cc.cuenta;
+		 this.Saldo=cc.Saldo;
+		 this.numeroCuenta=cc.numeroCuenta;
+		 this.CuotaManejo=cc.CuotaManejo;
+		 this.interes=cc.interes;
+		 this.fechaCorte=cc.fechaCorte;
+		 
+				 
 		 
 	 }
 	   public Cliente getPropietario() {
@@ -84,52 +97,48 @@ public class CuentaCreditoPadre implements ICuentaCredito{
 		this.fechaCorte = fechaCorte;
 	}
 
-
-
 	@Override
-	public Cliente propietario() {
+	public Cliente propietario(Cliente pro) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
-	public Tarjeta tarjeta() {
+	public Tarjeta tarjeta(Tarjeta tar) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
-	public String cuenta() {
+	public String cuenta(String cuenta) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 	@Override
-	public int Saldo() {
+	public int Saldo(int Saldo) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public int numeroCuenta() {
+	public int numeroCuenta(int numeroCuenta) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public int CuotaManejo() {
+	public int CuotaManejo(int CuotaManej) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public int interes() {
+	public int interes(int interes) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
-	public Date fechaCorte() {
+	public Date fechaCorte(Date fechaCorte) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public ICuentaCredito IClonarCredito() {
 		// TODO Auto-generated method stub
 		return null;
 	}

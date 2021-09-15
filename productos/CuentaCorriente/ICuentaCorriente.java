@@ -1,6 +1,7 @@
 package productos.CuentaCorriente;
 
 import Launcher.Cliente;
+import productos.CuentaAhorros.ICuentaAhorros;
 import productos.Tarjeta.Tarjeta;
 
 public interface ICuentaCorriente {
@@ -11,6 +12,6 @@ public interface ICuentaCorriente {
 	public int Saldo(int Saldo);
 	public int numeroCuenta(int numeroCuenta);
 	public int CuotaManejo(int Cuota);
-	
+	public ICuentaCorriente IClonarCorriente();
 	
 }

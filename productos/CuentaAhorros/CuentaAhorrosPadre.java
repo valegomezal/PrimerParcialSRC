@@ -13,7 +13,15 @@ public class CuentaAhorrosPadre implements ICuentaAhorros{
 	private int CuotaManejo;
 	private Cliente propietario;
 	
-	
+	public CuentaAhorrosPadre() {}
+	private CuentaAhorrosPadre(CuentaAhorrosPadre ca) {
+		this.tarjeta=ca.tarjeta;
+		this.cuenta=ca.cuenta;
+		this.Saldo=ca.Saldo;
+		this.numeroCuenta=ca.numeroCuenta;
+		this.CuotaManejo=ca.CuotaManejo;
+		this.propietario=ca.propietario;
+	}
 	public Cliente getPropietario() {
 		return propietario;
 	}
@@ -62,8 +70,6 @@ public class CuentaAhorrosPadre implements ICuentaAhorros{
 		CuotaManejo = cuotaManejo;
 	}
 
-	
-	
 
 	@Override
 	public Cliente propietario(Cliente pro) {
