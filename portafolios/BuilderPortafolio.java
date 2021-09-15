@@ -1,4 +1,4 @@
-package Portafolio;
+package portafolios;
 
 import productos.producto.Producto;
 

@@ -1,14 +1,14 @@
-package Portafolio;
+package portafolios;
 
-import Portafolio.PortafolioClase;
-import Portafolio.BuilderPortafolio;
+import portafolios.Portafolio;
+import portafolios.BuilderPortafolio;
 import java.util.ArrayList;
 
 import productos.producto.Producto;
 
 public class BuilderPortafolioConcreto implements BuilderPortafolio{
     
-    PortafolioClase portafolio = new PortafolioClase();
+    Portafolio portafolio = new Portafolio();
 
     @Override
     public BuilderPortafolio setProducto(Producto producto) {

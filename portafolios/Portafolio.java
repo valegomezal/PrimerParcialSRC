@@ -1,4 +1,4 @@
-package Portafolio;
+package portafolios;
 
 import java.util.ArrayList;
 import productos.producto.Producto;
@@ -7,9 +7,9 @@ import productos.producto.Producto;
  *
  * @author juana
  */
-public class PortafolioClase {
+public class Portafolio {
 
-    public PortafolioClase() {
+    public Portafolio() {
     }
     
     private ArrayList<Producto> lista_producto = new ArrayList<Producto>();
