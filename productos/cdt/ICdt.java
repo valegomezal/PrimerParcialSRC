@@ -1,10 +1,16 @@
 package productos.cdt;
 
 import Launcher.Cliente;
+import ProtoType.Clone;
+
 import java.util.Date;
 
-public interface ICdt {
+public interface ICdt  {
 	
+
+
+
+
 	public String propietario(String pro);
 	public Date FechaApertura(Date FechA);
 	public Date FechaCierre(Date FechC);
@@ -14,7 +20,7 @@ public interface ICdt {
 	public long MinimoApertura(long Apert);
 	public String toString();
 
-	
 
+	
 
 }

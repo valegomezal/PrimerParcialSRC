@@ -3,9 +3,11 @@ package productos.Credito;
 import java.util.Date;
 
 import Launcher.Cliente;
+import Launcher.Director;
 
 public class MilitarCredito implements ICredito{
 
+	Director d = new Director();
 	@Override
 	public Cliente propietario() {
 		// TODO Auto-generated method stub

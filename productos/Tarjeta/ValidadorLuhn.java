@@ -1,85 +1,62 @@
 package productos.Tarjeta;
 
-
+import java.util.Arrays;
 
 public class ValidadorLuhn {
 	
-	 int count = 0;
-     long array[] = new long [16];
-    
-    
-    
-    do
-    {
-     count = 0;
-    array = new long [16];
-     System.out.print("Ingrese el numero de su tarjeta : ");
-    
-    
-     for (int i = 0; number != 0; i++) {
-     array[i] = number % 10;
-     number = number / 10;
-     count++;
-     }
-    }
-     while(count < 13); 
-     if ((array[count - 1] == 4) || (array[count - 1] == 5) || (array[count - 1] == 3 && array[count - 2] == 7)){
-         if (isValid(array) == true) {
-             System.out.println("\n El numero de la tarjeta es valido. ");
-     } else {
-         System.out.println("\n El numero de la tarjeta es invalido. ");
-     }
-     } else{
-       System.out.println("\n El numero de la tarjeta es invalido. ");
-     }
-}
-
- public static boolean isValid(long[] array) {
-     int total = sumOfDoubleEvenPlace(array) + sumOfOddPlace(array);        
-     if ((total % 10 == 0)) {
-      for (int i=0; i< array.length; i++){
-         System.out.println(array[i]);}
-         return true;
-     } else {
-       for (int i=0; i< array.length; i++){
-         System.out.println(array[i]);}
-         return false;
-     }
- }
-
- public static int getDigit(int number) {
-     if (number <= 9) {
-         return number;
-     } else {
-         int firstDigit = number % 10;
-         int secondDigit = (int) (number / 10);
-         return firstDigit + secondDigit;
-     }
- }
-
- public static int sumOfOddPlace(long[] array) {
-     int result = 0;
-     for (int i=0; i< array.length; i++)
-     {
-     while (array[i] > 0) {
-         result += (int) (array[i] % 10);
-         array[i] = array[i] / 100;
-      }}
-      System.out.println("\n The sum of odd place is " + result);
-     return result;
- }
-
- public static int sumOfDoubleEvenPlace(long[] array) {
-     int result = 0;
-     long temp = 0;
-     for (int i=0; i< array.length; i++){
-     while (array[i] > 0) {
-          temp = array[i] % 100;
-          result += getDigit((int) (temp / 10) * 2);
-         array[i] = array[i] / 100;
+   public void validar() {
+    	 
+        String cardNumber="1358954993914435";
+ 
+        boolean validCreditCardNumber = isValidCreditCardNumber(cardNumber);
+ 
+        if(validCreditCardNumber)
+        {
+            System.out.println(cardNumber+" is valid as per luhn algorithm");
         }
-     }
-     System.out.println("\n The sum of double even place is " + result);
-     return result;
- }
-
+        else
+        {
+            System.out.println(cardNumber+" is not valid as per luhn algorithm");
+        }
+    }
+ 
+    public static boolean isValidCreditCardNumber(String cardNumber)
+    {
+        // int array for processing the cardNumber
+        int[] cardIntArray=new int[cardNumber.length()];
+ 
+        for(int i=0;i<cardNumber.length();i++)
+        {
+            char c= cardNumber.charAt(i);
+            cardIntArray[i]=  Integer.parseInt(""+c);
+        }
+ 
+        for(int i=cardIntArray.length-2;i>=0;i=i-2)
+        {
+            int num = cardIntArray[i];
+            num = num * 2;  // step 1
+            if(num>9)
+            {
+                num = num%10 + num/10;  // step 2
+            }
+            cardIntArray[i]=num;
+        }
+ 
+        int sum = sumDigits(cardIntArray);  // step 3
+ 
+        System.out.println(sum);
+ 
+        if(sum%10==0)  // step 4
+        {
+            return true;
+        }
+ 
+        return false;
+ 
+    }
+ 
+    public static int sumDigits(int[] arr)
+    {
+        return Arrays.stream(arr).sum();
+    }
+}

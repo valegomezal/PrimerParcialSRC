@@ -1,10 +1,12 @@
 package productos.CuentaAhorros;
 
 import Launcher.Cliente;
+import Launcher.Director;
 import productos.Tarjeta.Tarjeta;
 
 public class TrabajosAhorros  implements ICuentaAhorros {
 
+	Director d = new Director();
 	@Override
 	public Tarjeta tarjeta() {
 		// TODO Auto-generated method stub

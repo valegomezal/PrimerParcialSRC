@@ -4,7 +4,7 @@ import Launcher.Cliente;
 
 public class Tarjeta {
 	
-	private long number;
+	private String number;
 	private int NumeroMes;
 	private int AnoVencimiento;
 	private int Cvv;
@@ -12,7 +12,7 @@ public class Tarjeta {
 	
 	
 	
-	public Tarjeta(Cliente propietario,long number,int NumeroMes,int AnoVencimiento,int Cvv) {
+	public Tarjeta(Cliente propietario,String number,int NumeroMes,int AnoVencimiento,int Cvv) {
 		
 		this.number=number;
 		this.NumeroMes=NumeroMes;
@@ -22,12 +22,10 @@ public class Tarjeta {
 	}
 	
 
-
-
-	public long getnumber() {
+	public String getnumber() {
 		return number;
 	}
-	public void setnumber(long number) {
+	public void setnumber(String number) {
 		this.number  = number;
 	}
 	public int getNumeroMes() {

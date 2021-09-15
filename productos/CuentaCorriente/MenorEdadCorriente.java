@@ -1,10 +1,12 @@
 package productos.CuentaCorriente;
 
 import Launcher.Cliente;
+import Launcher.Director;
 import productos.Tarjeta.Tarjeta;
 
 public class MenorEdadCorriente implements ICuentaCorriente{
 
+	Director d = new Director();
 	@Override
 	public Tarjeta tarjeta() {
 		// TODO Auto-generated method stub

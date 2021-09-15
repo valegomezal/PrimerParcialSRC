@@ -3,10 +3,12 @@ package productos.CuentaCredito;
 import java.util.Date;
 
 import Launcher.Cliente;
+import Launcher.Director;
 import productos.Tarjeta.Tarjeta;
 
 public class CincuentaCuentaCredito implements ICuentaCredito{
 
+	Director d = new Director();
 	@Override
 	public Tarjeta tarjeta() {
 		// TODO Auto-generated method stub

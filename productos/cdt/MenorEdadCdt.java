@@ -6,7 +6,6 @@ import Launcher.Cliente;
 public class MenorEdadCdt implements ICdt{
 	
 
-
 	@Override
 	public long saldo(long saldo) {
 		// TODO Auto-generated method stub
@@ -14,7 +13,6 @@ public class MenorEdadCdt implements ICdt{
 		return saldo;
 	}
 
-	
 	@Override
 	public String propietario(String pro) {
 		// TODO Auto-generated method stub
