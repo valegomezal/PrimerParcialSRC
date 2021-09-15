@@ -8,6 +8,5 @@ import Launcher.Director;
 public class MenorEdadCredito extends CreditoPadre{
     
     
-.
 
 }

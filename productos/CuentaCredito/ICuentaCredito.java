@@ -3,6 +3,7 @@ package productos.CuentaCredito;
 import java.util.Date;
 
 import Launcher.Cliente;
+import java.time.LocalDate;
 import productos.CuentaAhorros.ICuentaAhorros;
 import productos.Tarjeta.Tarjeta;
 
@@ -15,6 +16,6 @@ public interface ICuentaCredito {
     public int numeroCuenta(int numeroCuenta);
     public int CuotaManejo(int CuotaManej);
     public int interes(int interes);
-    public Date fechaCorte(Date fechaCorte);
-    public ICuentaCredito IClonarCredito();
+    public LocalDate fechaCorte(LocalDate fechaCorte);
+    public ICuentaCredito clonar();
 }

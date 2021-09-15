@@ -3,145 +3,201 @@ package productos.CuentaCredito;
 import java.util.Date;
 
 import Launcher.Cliente;
+import java.time.LocalDate;
 import productos.Credito.CreditoPadre;
 import productos.Tarjeta.Tarjeta;
 
-public class CuentaCreditoPadre implements ICuentaCredito{
-	
-	private Cliente propietario;
-	   private Tarjeta tarjeta;
-	   private String cuenta;
-	   private int Saldo;
-	   private int numeroCuenta;
-	   private int CuotaManejo;
-	   private int interes;
-	   private Date fechaCorte;
-	   
-	   
-	 public CuentaCreditoPadre() {}
-	 
-	 private CuentaCreditoPadre(CuentaCreditoPadre cc) {
-		 
-		 this.propietario=cc.propietario;
-		 this.tarjeta=cc.tarjeta;
-		 this.cuenta=cc.cuenta;
-		 this.Saldo=cc.Saldo;
-		 this.numeroCuenta=cc.numeroCuenta;
-		 this.CuotaManejo=cc.CuotaManejo;
-		 this.interes=cc.interes;
-		 this.fechaCorte=cc.fechaCorte;
-		 
-				 
-		 
-	 }
-	   public Cliente getPropietario() {
-		return propietario;
-	}
+public class CuentaCreditoPadre implements ICuentaCredito {
 
-	public void setPropietario(Cliente propietario) {
-		this.propietario = propietario;
-	}
+    private Cliente propietario;
+    private Tarjeta tarjeta;
+    private String cuenta;
+    private int Saldo;
+    private int numeroCuenta;
+    private int CuotaManejo;
+    private int interes;
+    private LocalDate fechaCorte;
 
-	public Tarjeta getTarjeta() {
-		return tarjeta;
-	}
+    public CuentaCreditoPadre() {
+    }
 
-	public void setTarjeta(Tarjeta tarjeta) {
-		this.tarjeta = tarjeta;
-	}
+    private CuentaCreditoPadre(CuentaCreditoPadre cc) {
 
-	public String getCuenta() {
-		return cuenta;
-	}
+        this.propietario = cc.propietario;
+        this.tarjeta = cc.tarjeta;
+        this.cuenta = cc.cuenta;
+        this.Saldo = cc.Saldo;
+        this.numeroCuenta = cc.numeroCuenta;
+        this.CuotaManejo = cc.CuotaManejo;
+        this.interes = cc.interes;
+        this.fechaCorte = cc.fechaCorte;
 
-	public void setCuenta(String cuenta) {
-		this.cuenta = cuenta;
-	}
+    }
+    
+    /**
+     * @return the propietario
+     */
+    public Cliente getPropietario() {
+        return propietario;
+    }
 
-	public int getSaldo() {
-		return Saldo;
-	}
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Cliente propietario) {
+        this.propietario = propietario;
+    }
 
-	public void setSaldo(int saldo) {
-		Saldo = saldo;
-	}
+    /**
+     * @return the tarjeta
+     */
+    public Tarjeta getTarjeta() {
+        return tarjeta;
+    }
 
-	public int getNumeroCuenta() {
-		return numeroCuenta;
-	}
+    /**
+     * @param tarjeta the tarjeta to set
+     */
+    public void setTarjeta(Tarjeta tarjeta) {
+        this.tarjeta = tarjeta;
+    }
 
-	public void setNumeroCuenta(int numeroCuenta) {
-		this.numeroCuenta = numeroCuenta;
-	}
+    /**
+     * @return the cuenta
+     */
+    public String getCuenta() {
+        return cuenta;
+    }
 
-	public int getCuotaManejo() {
-		return CuotaManejo;
-	}
+    /**
+     * @param cuenta the cuenta to set
+     */
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
 
-	public void setCuotaManejo(int cuotaManejo) {
-		CuotaManejo = cuotaManejo;
-	}
+    /**
+     * @return the Saldo
+     */
+    public int getSaldo() {
+        return Saldo;
+    }
 
-	public int getInteres() {
-		return interes;
-	}
+    /**
+     * @param Saldo the Saldo to set
+     */
+    public void setSaldo(int Saldo) {
+        this.Saldo = Saldo;
+    }
 
-	public void setInteres(int interes) {
-		this.interes = interes;
-	}
+    /**
+     * @return the numeroCuenta
+     */
+    public int getNumeroCuenta() {
+        return numeroCuenta;
+    }
 
-	public Date getFechaCorte() {
-		return fechaCorte;
-	}
+    /**
+     * @param numeroCuenta the numeroCuenta to set
+     */
+    public void setNumeroCuenta(int numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
 
-	public void setFechaCorte(Date fechaCorte) {
-		this.fechaCorte = fechaCorte;
-	}
+    /**
+     * @return the CuotaManejo
+     */
+    public int getCuotaManejo() {
+        return CuotaManejo;
+    }
 
-	@Override
-	public Cliente propietario(Cliente pro) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public Tarjeta tarjeta(Tarjeta tar) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public String cuenta(String cuenta) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public int Saldo(int Saldo) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	@Override
-	public int numeroCuenta(int numeroCuenta) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	@Override
-	public int CuotaManejo(int CuotaManej) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	@Override
-	public int interes(int interes) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	@Override
-	public Date fechaCorte(Date fechaCorte) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public ICuentaCredito IClonarCredito() {
-		// TODO Auto-generated method stub
-		return new  CuentaCreditoPadre(this);
-	}
+    /**
+     * @param CuotaManejo the CuotaManejo to set
+     */
+    public void setCuotaManejo(int CuotaManejo) {
+        this.CuotaManejo = CuotaManejo;
+    }
+
+    /**
+     * @return the interes
+     */
+    public int getInteres() {
+        return interes;
+    }
+
+    /**
+     * @param interes the interes to set
+     */
+    public void setInteres(int interes) {
+        this.interes = interes;
+    }
+
+    /**
+     * @return the fechaCorte
+     */
+    public LocalDate getFechaCorte() {
+        return fechaCorte;
+    }
+
+    /**
+     * @param fechaCorte the fechaCorte to set
+     */
+    public void setFechaCorte(LocalDate fechaCorte) {
+        this.fechaCorte = fechaCorte;
+    }
+
+    @Override
+    public Cliente propietario(Cliente pro) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public Tarjeta tarjeta(Tarjeta tar) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public String cuenta(String cuenta) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public int Saldo(int Saldo) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public int numeroCuenta(int numeroCuenta) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public int CuotaManejo(int CuotaManej) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public int interes(int interes) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public LocalDate fechaCorte(LocalDate fechaCorte) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public ICuentaCredito clonar() {
+        // TODO Auto-generated method stub
+        return new CuentaCreditoPadre(this);
+    }
 
 }

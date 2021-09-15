@@ -12,5 +12,5 @@ public interface ICuentaAhorros {
 	public int Saldo(int Saldo);
 	public int numeroCuenta(int numC);
 	public int CuotaManejo(int CuotaM);
-	public ICuentaAhorros IClonarAhorros();
+	public ICuentaAhorros clonar();
 }
