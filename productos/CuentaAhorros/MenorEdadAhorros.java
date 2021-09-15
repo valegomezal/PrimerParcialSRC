@@ -11,6 +11,5 @@ public class MenorEdadAhorros extends CuentaAhorrosPadre{
         this.numeroCuenta("000"+propietario.getId_cliente());
         this.setCuotaManejo(5);
         this.setPropietario(propietario);
-                
     }
 }
