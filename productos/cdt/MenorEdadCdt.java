@@ -4,47 +4,54 @@ import java.util.Date;
 import Launcher.Cliente;
 
 public class MenorEdadCdt implements ICdt{
+	
+
 
 	@Override
-	public Date FechaApertura() {
+	public long saldo(long saldo) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		return saldo;
+	}
+
+	
+	@Override
+	public String propietario(String pro) {
+		// TODO Auto-generated method stub
+		return pro;
 	}
 
 	@Override
-	public Date FechaCierre() {
+	public Date FechaApertura(Date FechA) {
 		// TODO Auto-generated method stub
-		return null;
+		return FechA;
 	}
 
 	@Override
-	public long NumeroCuenta() {
+	public Date FechaCierre(Date FechC) {
 		// TODO Auto-generated method stub
-		return 0;
+		return FechC;
 	}
 
 	@Override
-	public long saldo() {
+	public long NumeroCuenta(long NumC) {
 		// TODO Auto-generated method stub
-		return 0;
+		return NumC;
 	}
 
 	@Override
-	public int interes() {
+	public int interes(int inte) {
 		// TODO Auto-generated method stub
-		return 0;
+		return inte;
 	}
 
 	@Override
-	public long MinimoApertura() {
+	public long MinimoApertura(long Apert) {
 		// TODO Auto-generated method stub
-		return 0;
+		return Apert;
 	}
-
-	@Override
-	public Cliente propietario() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
+	
+	
 
 }

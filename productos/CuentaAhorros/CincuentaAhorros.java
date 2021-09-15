@@ -20,7 +20,7 @@ public class CincuentaAhorros implements ICuentaAhorros{
 	@Override
 	public int Saldo() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 200000;
 	}
 
 	@Override

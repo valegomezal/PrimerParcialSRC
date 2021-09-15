@@ -5,11 +5,16 @@ import java.util.Date;
 
 public interface ICdt {
 	
-	public Cliente propietario();
-	public Date FechaApertura();
-	public Date FechaCierre();
-	public long NumeroCuenta();
-	public long saldo();
-	public int interes();
-	public long MinimoApertura();
+	public String propietario(String pro);
+	public Date FechaApertura(Date FechA);
+	public Date FechaCierre(Date FechC);
+	public long NumeroCuenta(long NumC);
+	public long saldo(long saldo);
+	public int interes(int inte);
+	public long MinimoApertura(long Apert);
+	public String toString();
+
+	
+
+
 }
