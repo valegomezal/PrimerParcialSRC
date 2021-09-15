@@ -13,6 +13,7 @@ public class CreditoPadre implements ICredito {
 	private Date FechasPago;
 	private Cliente propietario;
 	
+        public CreditoPadre() {}
 	
 	private CreditoPadre(CreditoPadre Cr) {
 		super();
@@ -66,10 +67,6 @@ public class CreditoPadre implements ICredito {
 	public void setFechasPago(Date fechasPago) {
 		FechasPago = fechasPago;
 	}
-	
-	
-	public CreditoPadre() {}
-	
 	
 	
 	@Override

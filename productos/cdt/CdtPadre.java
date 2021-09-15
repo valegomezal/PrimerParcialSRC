@@ -4,19 +4,21 @@ import java.util.Date;
 
 
 import Launcher.Cliente;
+import java.time.LocalDate;
 
 
 public class CdtPadre implements ICdt {
 	
 	private Cliente propietario;
-	private Date fechaApertura;
-	private Date fechaCierre;
+	private LocalDate fechaApertura;
+	private LocalDate fechaCierre;
 	private long NumeroCuenta;
 	private long saldo;
 	private int interes;
 	private long MinimoApertura;
 	
 	public CdtPadre() {}
+        /*
 	public CdtPadre(CdtPadre c) {
 		
 		this.propietario=c.propietario;
@@ -28,6 +30,20 @@ public class CdtPadre implements ICdt {
 		this.MinimoApertura=c.MinimoApertura;
 		
 	}
+        */
+        
+        private CdtPadre(CdtPadre c) {
+		
+		this.propietario=c.propietario;
+		this.fechaApertura=c.fechaApertura;
+		this.fechaCierre=c.fechaCierre;
+		this.NumeroCuenta=c.NumeroCuenta;
+		this.saldo=c.saldo;
+		this.interes=c.interes;
+		this.MinimoApertura=c.MinimoApertura;
+		
+	}
+        
 	public Cliente getPropietario() {
 		return propietario;
 	}
@@ -36,7 +52,7 @@ public class CdtPadre implements ICdt {
 		this.propietario = propietario;
 	}
 
-	public Date getfechaApertura() {
+	public LocalDate getfechaApertura() {
 		return fechaApertura;
 	}
 
@@ -68,11 +84,11 @@ public class CdtPadre implements ICdt {
 		this.saldo = saldo;
 	}
 
-	public Date getFechaCierre() {
+	public LocalDate getFechaCierre() {
 		return fechaCierre;
 	}
 
-	public void setFechaCierre(Date fechaCierre) {
+	public void setFechaCierre(LocalDate fechaCierre) {
 		this.fechaCierre = fechaCierre;
 	}
 
@@ -85,7 +101,7 @@ public class CdtPadre implements ICdt {
 	}
 	
 	@Override
-	public ICdt clonarICdt() {
+	public ICdt clonar() {
 		// TODO Auto-generated method stub
 		return new  CdtPadre(this);
 	}
@@ -95,12 +111,12 @@ public class CdtPadre implements ICdt {
 		return null;
 	}
 	@Override
-	public Date FechaApertura(Date FechA) {
+	public LocalDate FechaApertura(LocalDate fecha) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 	@Override
-	public Date FechaCierre(Date FechC) {
+	public LocalDate FechaCierre(LocalDate fecha) {
 		// TODO Auto-generated method stub
 		return null;
 	}
