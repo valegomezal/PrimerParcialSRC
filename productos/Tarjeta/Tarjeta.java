@@ -22,6 +22,11 @@ public class Tarjeta {
 	}
 	
 
+	public Tarjeta() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public String getnumber() {
 		return number;
 	}
@@ -46,5 +51,8 @@ public class Tarjeta {
 	public void setCvv(int cvv) {
 		Cvv = cvv;
 	}
+
+
+	
 	
 }

@@ -2,11 +2,14 @@ package productos.Tarjeta;
 
 import java.util.Arrays;
 
+
+
 public class ValidadorLuhn {
 	
    public void validar() {
-    	 
-        String cardNumber="1358954993914435";
+	   
+	    Tarjeta tar=new Tarjeta();
+        String cardNumber=tar.getnumber();
  
         boolean validCreditCardNumber = isValidCreditCardNumber(cardNumber);
  
