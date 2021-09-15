@@ -6,7 +6,7 @@ import productos.Tarjeta.Tarjeta;
 
 public class MenorEdadAhorros extends CuentaAhorrosPadre{
     public MenorEdadAhorros(Cliente propietario){
-        this.setTarjeta(new Tarjeta());
+        this.setTarjeta(new Tarjeta(200000));
         this.setSaldo(0);
         this.numeroCuenta("000"+propietario.getId_cliente());
         this.setCuotaManejo(5);

@@ -4,121 +4,153 @@ import Launcher.Cliente;
 import productos.CuentaAhorros.CuentaAhorrosPadre;
 import productos.Tarjeta.Tarjeta;
 
-public class CuentaCorrientePadre implements ICuentaCorriente{
-	
-	
-	private Tarjeta tarjeta;
-	private  String cuenta;
+public class CuentaCorrientePadre implements ICuentaCorriente {
+
+    private Tarjeta tarjeta;
+    private String cuenta;
     private int Saldo;
-	private int numeroCuenta;
-	private int CuotaManejo;
-	private Cliente propietario;
-	
-	public CuentaCorrientePadre() {}
-	
-	private CuentaCorrientePadre(CuentaCorrientePadre cp) {
-		
-		this.tarjeta=cp.tarjeta;
-		this.cuenta=cp.cuenta;
-		this.Saldo=cp.Saldo;
-		this.numeroCuenta=cp.numeroCuenta;
-		this.CuotaManejo=cp.CuotaManejo;
-		this.propietario=cp.propietario;
-		
-	}
-	
-	public Cliente getPropietario() {
-		return propietario;
-	}
+    private int numeroCuenta;
+    private int CuotaManejo;
+    private Cliente propietario;
 
-	public void setPropietario(Cliente propietario) {
-		this.propietario = propietario;
-	}
+    public CuentaCorrientePadre() {
+    }
 
-	public Tarjeta getTarjeta() {
-		return tarjeta;
-	}
+    private CuentaCorrientePadre(CuentaCorrientePadre cp) {
 
-	public void setTarjeta(Tarjeta tarjeta) {
-		this.tarjeta = tarjeta;
-	}
+        this.tarjeta = cp.tarjeta;
+        this.cuenta = cp.cuenta;
+        this.Saldo = cp.Saldo;
+        this.numeroCuenta = cp.numeroCuenta;
+        this.CuotaManejo = cp.CuotaManejo;
+        this.propietario = cp.propietario;
 
-	public String getCuenta() {
-		return cuenta;
-	}
+    }
 
-	public void setCuenta(String cuenta) {
-		this.cuenta = cuenta;
-	}
+    /**
+     * @return the tarjeta
+     */
+    public Tarjeta getTarjeta() {
+        return tarjeta;
+    }
 
-	public int getSaldo() {
-		return Saldo;
-	}
+    /**
+     * @param tarjeta the tarjeta to set
+     */
+    public void setTarjeta(Tarjeta tarjeta) {
+        this.tarjeta = tarjeta;
+    }
 
-	public void setSaldo(int saldo) {
-		Saldo = saldo;
-	}
+    /**
+     * @return the cuenta
+     */
+    public String getCuenta() {
+        return cuenta;
+    }
 
-	public int getNumeroCuenta() {
-		return numeroCuenta;
-	}
+    /**
+     * @param cuenta the cuenta to set
+     */
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
 
-	public void setNumeroCuenta(int numeroCuenta) {
-		this.numeroCuenta = numeroCuenta;
-	}
+    /**
+     * @return the Saldo
+     */
+    public int getSaldo() {
+        return Saldo;
+    }
 
-	public int getCuotaManejo() {
-		return CuotaManejo;
-	}
+    /**
+     * @param Saldo the Saldo to set
+     */
+    public void setSaldo(int Saldo) {
+        this.Saldo = Saldo;
+    }
 
-	public void setCuotaManejo(int cuotaManejo) {
-		CuotaManejo = cuotaManejo;
-	}
+    /**
+     * @return the numeroCuenta
+     */
+    public int getNumeroCuenta() {
+        return numeroCuenta;
+    }
 
-	
+    /**
+     * @param numeroCuenta the numeroCuenta to set
+     */
+    public void setNumeroCuenta(int numeroCuenta) {
+        this.numeroCuenta = numeroCuenta;
+    }
 
-	
-	@Override
-	public Cliente propietario(Cliente pro) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    /**
+     * @return the CuotaManejo
+     */
+    public int getCuotaManejo() {
+        return CuotaManejo;
+    }
 
-	@Override
-	public Tarjeta tarjeta(Tarjeta tar) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    /**
+     * @param CuotaManejo the CuotaManejo to set
+     */
+    public void setCuotaManejo(int CuotaManejo) {
+        this.CuotaManejo = CuotaManejo;
+    }
 
-	@Override
-	public String cuenta(String cuenta) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    /**
+     * @return the propietario
+     */
+    public Cliente getPropietario() {
+        return propietario;
+    }
 
-	@Override
-	public int Saldo(int Saldo) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Cliente propietario) {
+        this.propietario = propietario;
+    }
 
-	@Override
-	public int numeroCuenta(int numeroCuenta) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public Cliente propietario(Cliente pro) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	@Override
-	public int CuotaManejo(int Cuota) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    @Override
+    public Tarjeta tarjeta(Tarjeta tar) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
+    @Override
+    public String cuenta(String cuenta) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 
-	@Override
-	public ICuentaCorriente IClonarCorriente() {
-		// TODO Auto-generated method stub
-		return new  CuentaCorrientePadre(this);
-	}
+    @Override
+    public int Saldo(int Saldo) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public int numeroCuenta(int numeroCuenta) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public int CuotaManejo(int Cuota) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public ICuentaCorriente IClonarCorriente() {
+        // TODO Auto-generated method stub
+        return new CuentaCorrientePadre(this);
+    }
 
 }
