@@ -1,12 +1,21 @@
 package Portafolio;
 
-import java.util.ArrayList;
 import Portafolio.PortafolioClase;
+import Portafolio.BuilderPortafolio;
+import java.util.ArrayList;
+
 import productos.producto.Producto;
 
-public class BuilderPortafolioConcreto {
+public class BuilderPortafolioConcreto extends BuilderPortafolio{
     
-    Portafolio portafolio = new Portafolio();
+    PortafolioClase portafolio = new PortafolioClase();
+    
+    public BuilderPortafolioConcreto setProducto(Producto producto){
+        portafolio.agregarProducto(producto);
+        return this;
+    }
+    
+    
 
 }
 

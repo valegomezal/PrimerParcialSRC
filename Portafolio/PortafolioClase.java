@@ -3,7 +3,10 @@ package Portafolio;
 import java.util.ArrayList;
 import productos.producto.Producto;
 
-
+/**
+ *
+ * @author juana
+ */
 public class PortafolioClase {
 
     public PortafolioClase() {
