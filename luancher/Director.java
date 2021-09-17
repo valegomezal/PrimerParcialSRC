@@ -2,12 +2,12 @@ package luancher;
 
 import Builder.BuilderClienteConcreto;
 import Builder.IBuilderCliente;
-import Clientes.Clientes;
+import Clientes.Cliente;
 
 public class Director {
     private IBuilderCliente b;
     
-    public Clientes Cliente_estudiante(){
+    public Cliente Cliente_estudiante(){
       BuilderClienteConcreto cle = new BuilderClienteConcreto(); 
       cle.reset("2003/12/01", "Estudiante");
       cle.setID("1019131750");
@@ -15,7 +15,7 @@ public class Director {
       cle.setPortafolio();
       return cle.getCliente();
     }
-    public Clientes Cliente_trabjador(){
+    public Cliente Cliente_trabjador(){
       BuilderClienteConcreto cle = new BuilderClienteConcreto(); 
       cle.reset("1993/07/01", "Trabajador");
       cle.setID("1902349512");
@@ -23,7 +23,7 @@ public class Director {
       cle.setPortafolio();
       return cle.getCliente();
     }
-    public Clientes Cliente_cincuentanero(){
+    public Cliente Cliente_cincuentanero(){
       BuilderClienteConcreto cle = new BuilderClienteConcreto(); 
       cle.reset("1975/10/01", "Cincuentañero");
       cle.setID("12230491");
@@ -31,7 +31,7 @@ public class Director {
       cle.setPortafolio();
       return cle.getCliente();
     }
-    public Clientes Cliente_militar(){
+    public Cliente Cliente_militar(){
       BuilderClienteConcreto cle = new BuilderClienteConcreto(); 
       cle.reset("1980/12/01", "Militar");
       cle.setID("11232934");

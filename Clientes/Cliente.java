@@ -8,14 +8,14 @@ import java.time.*;
  *
  * @author andresdavidcontrerasgonzalez
  */
-public class Clientes {
+public class Cliente {
      public LocalDate Fechadenacimiento;
      public String id_cliente;
      public String ocupacion;
      public String Nombre;
      public boolean portafolio=false;
 
-    public Clientes(LocalDate Fechadenacimiento, String ocupacion) {
+    public Cliente(LocalDate Fechadenacimiento, String ocupacion) {
         this.Fechadenacimiento = Fechadenacimiento;
         this.ocupacion = ocupacion;
     }

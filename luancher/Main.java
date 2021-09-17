@@ -5,7 +5,7 @@
  */
 package luancher;
 
-import Clientes.Clientes;
+import Clientes.Cliente;
 import java.util.Calendar;
 import java.util.Date;
 import Clientes.ClienteMenu;
@@ -18,16 +18,16 @@ public class Main {
     public static void main(String[] args) {
       /*
       Director d = new Director();
-      Clientes Estudiante = d.Cliente_estudiante();
-      Clientes Trabajador = d.Cliente_trabjador();
-      Clientes Cincuentanero= d.Cliente_cincuentanero();
-      Clientes Militar = d.Cliente_militar();
+      Cliente Estudiante = d.Cliente_estudiante();
+      Cliente Trabajador = d.Cliente_trabjador();
+      Cliente Cincuentanero= d.Cliente_cincuentanero();
+      Cliente Militar = d.Cliente_militar();
       
         System.out.println(Estudiante.toString());
         System.out.println("");
         */
       ClienteMenu creadorCliente = new ClienteMenu();
-      Clientes cliente1 = creadorCliente.createCliente();
+      Cliente cliente1 = creadorCliente.createCliente();
         System.out.println("Hola");
         System.out.println(cliente1.toString());
     }   

@@ -1,6 +1,6 @@
 package Builder;
 
-import Clientes.Clientes;
+import Clientes.Cliente;
 import java.util.Date;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -12,9 +12,9 @@ import java.time.format.DateTimeParseException;
  */
 public class BuilderClienteConcreto implements IBuilderCliente {
 
-    private Clientes clienteAuxiliar;
+    private Cliente clienteAuxiliar;
 
-    public Clientes reset(String fecha, String ocupacion) {
+    public Cliente reset(String fecha, String ocupacion) {
         LocalDate date;
         
         try {
@@ -26,7 +26,7 @@ public class BuilderClienteConcreto implements IBuilderCliente {
             System.out.printf("%s Fecha incorrecta!%n", fecha);
             throw exc;      // Rethrow the exception.
         }
-        clienteAuxiliar = new Clientes(date, ocupacion);
+        clienteAuxiliar = new Cliente(date, ocupacion);
         return clienteAuxiliar;
     }
 
@@ -55,7 +55,7 @@ public class BuilderClienteConcreto implements IBuilderCliente {
     }
 
     @Override
-    public Clientes getCliente() {
+    public Cliente getCliente() {
         return this.clienteAuxiliar;
     }
 }

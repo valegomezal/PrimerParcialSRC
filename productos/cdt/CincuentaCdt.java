@@ -2,7 +2,7 @@ package productos.cdt;
 
 import java.util.Date;
 
-import Launcher.Cliente;
+import Clientes.Cliente;
 
 public class CincuentaCdt extends CdtPadre {
 

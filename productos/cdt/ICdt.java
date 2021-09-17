@@ -1,6 +1,6 @@
 package productos.cdt;
 
-import Launcher.Cliente;
+import Clientes.Cliente;
 import ProtoType.Clone;
 import java.time.LocalDate;
 

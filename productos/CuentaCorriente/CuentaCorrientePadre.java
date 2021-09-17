@@ -1,6 +1,6 @@
 package productos.CuentaCorriente;
 
-import Launcher.Cliente;
+import Clientes.Cliente;
 import productos.CuentaAhorros.CuentaAhorrosPadre;
 import productos.Tarjeta.Tarjeta;
 

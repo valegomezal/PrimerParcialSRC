@@ -2,7 +2,7 @@ package productos.CuentaCredito;
 
 import java.util.Date;
 
-import Launcher.Cliente;
+import Clientes.Cliente;
 import java.time.LocalDate;
 import productos.CuentaAhorros.ICuentaAhorros;
 import productos.Tarjeta.Tarjeta;

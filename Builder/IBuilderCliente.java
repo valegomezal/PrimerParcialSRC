@@ -1,7 +1,7 @@
 
 package Builder;
 
-import Clientes.Clientes;
+import Clientes.Cliente;
 
 /**
  *
@@ -13,5 +13,5 @@ public interface IBuilderCliente {
     public IBuilderCliente setOcupacion(String Ocupacion);
     public IBuilderCliente setNombre(String nombre);
     public IBuilderCliente setPortafolio();
-    public Clientes getCliente();
+    public Cliente getCliente();
 }

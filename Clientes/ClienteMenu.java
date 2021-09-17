@@ -6,7 +6,7 @@ package Clientes;
  * and open the template in the editor.
  */
 
-import Clientes.Clientes;
+import Clientes.Cliente;
 import java.util.Scanner;
 import Builder.BuilderClienteConcreto;
 
@@ -25,7 +25,7 @@ public class ClienteMenu {
         return menu;
     }
     
-    public Clientes createCliente(){
+    public Cliente createCliente(){
         String fecha = "";
         String ocupacion = "";
         String nombre = "";
