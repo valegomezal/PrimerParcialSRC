@@ -6,8 +6,9 @@ import Launcher.Cliente;
 import java.time.LocalDate;
 import productos.CuentaAhorros.ICuentaAhorros;
 import productos.Tarjeta.Tarjeta;
+import productos.producto.Producto;
 
-public interface ICuentaCredito {
+public interface ICuentaCredito extends Producto{
 	
     public Cliente propietario(Cliente pro);
     public Tarjeta tarjeta(Tarjeta tar);

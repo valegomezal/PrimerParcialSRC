@@ -15,6 +15,13 @@ public class BuilderPortafolioConcreto implements BuilderPortafolio{
         portafolio.agregarProducto(producto);
         return this;
     }
+    
+    public Portafolio build(){
+        Portafolio portafolioAuxiliar = this.portafolio;
+        this.portafolio = new Portafolio();
+        
+        return portafolioAuxiliar;
+    }
 }
 
 

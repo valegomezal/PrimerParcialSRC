@@ -5,8 +5,9 @@ import ProtoType.Clone;
 import java.time.LocalDate;
 
 import java.util.Date;
+import productos.producto.Producto;
 
-public interface ICdt   {
+public interface ICdt extends Producto{
 	
 	
 	public Cliente propietario(Cliente pro);

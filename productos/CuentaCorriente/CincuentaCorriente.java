@@ -4,7 +4,7 @@ import Launcher.Cliente;
 import Launcher.Director;
 import productos.Tarjeta.Tarjeta;
 
-public class CincuentaCorriente  extends  CuentaCorrientePadre{
+public class CincuentaCorriente extends CuentaCorrientePadre{
 
     public CincuentaCorriente(Cliente propietario) {
         this.setPropietario(propietario);

@@ -3,8 +3,9 @@ package productos.CuentaCorriente;
 import Launcher.Cliente;
 import productos.CuentaAhorros.ICuentaAhorros;
 import productos.Tarjeta.Tarjeta;
+import productos.producto.Producto;
 
-public interface ICuentaCorriente {
+public interface ICuentaCorriente extends Producto{
 	
 	public Cliente propietario(Cliente pro);
 	public Tarjeta tarjeta(Tarjeta tar);

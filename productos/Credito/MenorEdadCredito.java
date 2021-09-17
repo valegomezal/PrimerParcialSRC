@@ -9,6 +9,7 @@ public class MenorEdadCredito extends CreditoPadre{
     
     public MenorEdadCredito(Cliente propietario){
         this.setPropietario(propietario);
+        this.setValorCredito(0);
     }
 
 }

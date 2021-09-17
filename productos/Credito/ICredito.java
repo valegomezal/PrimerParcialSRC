@@ -3,8 +3,9 @@ package productos.Credito;
 import java.util.Date;
 import Launcher.Cliente;
 import productos.cdt.ICdt;
+import productos.producto.Producto;
 
-public interface ICredito {
+public interface ICredito extends Producto{
 
 	public Cliente propietario(Cliente pro);
 	public long ValorCredito(long ValorCredito);
