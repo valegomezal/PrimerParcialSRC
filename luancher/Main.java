@@ -9,26 +9,21 @@ import Clientes.Cliente;
 import java.util.Calendar;
 import java.util.Date;
 import Clientes.ClienteMenu;
+import java.text.SimpleDateFormat;
+import java.util.Scanner;
+import Clientes.ClienteMenu;
 
 /**
  *
  * @author andresdavidcontrerasgonzalez
  */
 public class Main {
+
     public static void main(String[] args) {
-      /*
-      Director d = new Director();
-      Cliente Estudiante = d.Cliente_estudiante();
-      Cliente Trabajador = d.Cliente_trabjador();
-      Cliente Cincuentanero= d.Cliente_cincuentanero();
-      Cliente Militar = d.Cliente_militar();
-      
-        System.out.println(Estudiante.toString());
-        System.out.println("");
-        */
-      ClienteMenu creadorCliente = new ClienteMenu();
-      Cliente cliente1 = creadorCliente.createCliente();
-        System.out.println("Hola");
-        System.out.println(cliente1.toString());
-    }   
+        
+        ClienteMenu creadorCliente = new ClienteMenu();
+        Cliente client1 = creadorCliente.createCliente();
+        System.out.println(client1.toString());
+        System.out.println(client1.getEdad());
+    }
 }

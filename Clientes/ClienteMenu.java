@@ -68,8 +68,10 @@ public class ClienteMenu {
                 if (fecha != "" && ocupacion != "") {
                     builder.setID(id);
                     builder.setNombre(nombre);
-                    builder.setPortafolio();
-                    return builder.getCliente();
+                    Cliente client = builder.getCliente();
+                    client.asignarPortafolio();
+                    
+                    return client;
                 } else {
                     System.out.println("Los campos Fecha de nacimiento y Ocupación son mandatorios.");
                 }

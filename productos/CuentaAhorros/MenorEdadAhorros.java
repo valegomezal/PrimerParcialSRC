@@ -8,7 +8,6 @@ public class MenorEdadAhorros extends CuentaAhorrosPadre{
     public MenorEdadAhorros(Cliente propietario){
         this.setTarjeta(new Tarjeta(200000));
         this.setSaldo(0);
-        this.numeroCuenta(Integer.parseInt(propietario.getId_cliente()));
         this.setCuotaManejo(5);
         this.setPropietario(propietario);
     }

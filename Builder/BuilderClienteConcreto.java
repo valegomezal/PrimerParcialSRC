@@ -5,6 +5,7 @@ import java.util.Date;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import portafolios.Portafolio;
 
 /**
  *
@@ -32,25 +33,25 @@ public class BuilderClienteConcreto implements IBuilderCliente {
 
     @Override
     public IBuilderCliente setID(String Id) {
-        clienteAuxiliar.id_cliente = Id;
+        clienteAuxiliar.setId_cliente(Id);
         return this;
     }
 
     @Override
     public IBuilderCliente setOcupacion(String Ocupacion) {
-        clienteAuxiliar.ocupacion = Ocupacion;
+        clienteAuxiliar.setOcupacion(Ocupacion);
         return this;
     }
 
     @Override
     public IBuilderCliente setNombre(String nombre) {
-        clienteAuxiliar.Nombre = nombre;
+        clienteAuxiliar.setNombre(nombre);
         return this;
     }
 
     @Override
-    public IBuilderCliente setPortafolio() {
-        clienteAuxiliar.portafolio = true;
+    public IBuilderCliente setPortafolio(Portafolio port) {
+        clienteAuxiliar.setPortafolio(port);
         return this;
     }
 
