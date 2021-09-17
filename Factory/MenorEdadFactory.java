@@ -11,40 +11,36 @@ import productos.Credito.*;
 import productos.CuentaCorriente.*;
 import productos.CuentaCredito.*;
 
-public class MenorEdadFactory implements  IFactoryPortafolio {
+public class MenorEdadFactory implements IFactoryPortafolio {
 
-	@Override
-	public ICdt darCdt() {
-		// TODO Auto-generated method stub
-		return new MenorEdadCdt();
-	}
+    @Override
+    public ICdt darCdt() {
+        // TODO Auto-generated method stub
+        return new MenorEdadCdt();
+    }
 
-	@Override
-	public ICredito darCredito() {
-		// TODO Auto-generated method stub
-		return new MenorEdadCredito();
-	}
+    @Override
+    public ICredito darCredito() {
+        // TODO Auto-generated method stub
+        return new MenorEdadCredito();
+    }
 
-	@Override
-	public ICuentaAhorros darCuentaAhorros() {
-		// TODO Auto-generated method stub
-		return new MenorEdadAhorros();
-	}
+    @Override
+    public ICuentaAhorros darCuentaAhorros() {
+        // TODO Auto-generated method stub
+        return new MenorEdadAhorros();
+    }
 
-	@Override
-	public ICuentaCorriente darCuentaCorriente() {
-		// TODO Auto-generated method stub
-		return new MenorEdadCorriente();
-	}
+    @Override
+    public ICuentaCorriente darCuentaCorriente() {
+        // TODO Auto-generated method stub
+        return new MenorEdadCorriente();
+    }
 
-	@Override
-	public ICuentaCredito darCuentaCredito() {
-		// TODO Auto-generated method stub
-		return new MenorEdadCuentaCredita();
-	}
-
-	
-
-	
+    @Override
+    public ICuentaCredito darCuentaCredito() {
+        // TODO Auto-generated method stub
+        return new MenorEdadCuentaCredita();
+    }
 
 }
