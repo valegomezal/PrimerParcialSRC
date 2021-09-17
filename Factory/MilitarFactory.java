@@ -12,37 +12,36 @@ import productos.CuentaAhorros.*;
 import productos.CuentaCorriente.*;
 import productos.CuentaCredito.*;
 
+public class MilitarFactory implements IFactoryPortafolio {
 
-public class MilitarFactory implements  IFactoryPortafolio {
+    @Override
+    public ICdt darCdt() {
+        // TODO Auto-generated method stub
+        return new MilitarCdt();
+    }
 
-	@Override
-	public ICdt darCdt() {
-		// TODO Auto-generated method stub
-		return new MilitarCdt();
-	}
+    @Override
+    public ICredito darCredito() {
+        // TODO Auto-generated method stub
+        return new MilitarCredito();
+    }
 
-	@Override
-	public ICredito darCredito() {
-		// TODO Auto-generated method stub
-		return new MilitarCredito();
-	}
+    @Override
+    public ICuentaAhorros darCuentaAhorros() {
+        // TODO Auto-generated method stub
+        return new MilitarAhorros();
+    }
 
-	@Override
-	public ICuentaAhorros darCuentaAhorros() {
-		// TODO Auto-generated method stub
-		return new MilitarAhorros();
-	}
+    @Override
+    public ICuentaCorriente darCuentaCorriente() {
+        // TODO Auto-generated method stub
+        return new MilitarCorriente();
+    }
 
-	@Override
-	public ICuentaCorriente darCuentaCorriente() {
-		// TODO Auto-generated method stub
-		return new MilitarCorriente();
-	}
-
-	@Override
-	public ICuentaCredito darCuentaCredito() {
-		// TODO Auto-generated method stub
-		return new MilitarCuentaCredito();
-	}
+    @Override
+    public ICuentaCredito darCuentaCredito() {
+        // TODO Auto-generated method stub
+        return new MilitarCuentaCredito();
+    }
 
 }

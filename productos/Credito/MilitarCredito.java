@@ -12,4 +12,8 @@ public class MilitarCredito extends CreditoPadre{
         this.setValorCredito(5000000);
         this.setCuotas(36);
     }
+
+    public MilitarCredito() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

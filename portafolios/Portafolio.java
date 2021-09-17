@@ -17,5 +17,9 @@ public class Portafolio {
     public boolean agregarProducto(Producto producto) {
         return lista_producto.add(producto);
     }
+    
+    public void copiarProducto(int index){
+        this.lista_producto.add(this.lista_producto.get(index));
+    }
 
 }
