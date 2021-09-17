@@ -19,6 +19,11 @@ public class Cliente {
         this.Fechadenacimiento = Fechadenacimiento;
         this.ocupacion = ocupacion;
     }
+    
+    public int getEdad(){
+        return Period.between(Fechadenacimiento, java.time.LocalDate.now()).getYears();
+        
+    }
 
     public LocalDate getFechadenacimiento() {
         return Fechadenacimiento;
